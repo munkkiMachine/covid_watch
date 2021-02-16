@@ -8,21 +8,21 @@ Just run python -m (your_directory)/covid_watch
 
 ## Table of Contents
 - covid_watch
-  - data                          #^ all data for the pipeline rests here.
-    - external                    #^ any secondary data can be stored here.
-    - final                       #^ final scores stored here.
-    - processed                   #^ raw data engineered for scoring stored here.
-    - raw                         #^ raw data read in from WHO stored here.
-  - logs                          #^ logs to track data quality stored here.
-  - models                        #^ model artifacts can be stored here. Currently unused.
-  - notebooks                     #^ notebooks to visualize the results
-  - reports                       #^ more complete reports wil be stored here
+  - data                          # all data for the pipeline rests here.
+    - external                    # any secondary data can be stored here.
+    - final                       # final scores stored here.
+    - processed                   # raw data engineered for scoring stored here.
+    - raw                         # raw data read in from WHO stored here.
+  - logs                          # logs to track data quality stored here.
+  - models                        # model artifacts can be stored here. Currently unused.
+  - notebooks                     # notebooks to visualize the results
+  - reports                       # more complete reports wil be stored here
   - src
-    - config                      #^ config generator that provides inputs across the pipeline
-    - data                        #^ all data read/cleaning/transformation scripts
-    - models                      #^ script to conduct the scoring
-  - utils.py                      #^ occasionally used for universal functions across pipeline
-  - tests                         #^ unit tests can be found here
+    - config                      # config generator that provides inputs across the pipeline
+    - data                        # all data read/cleaning/transformation scripts
+    - models                      # script to conduct the scoring
+  - utils.py                      # occasionally used for universal functions across pipeline
+  - tests                         # unit tests can be found here
 
 ## Rough Explanation of the Process
 There's three major modules used in this pipeline: make_dataset, process_dataset, and predictor_function.
